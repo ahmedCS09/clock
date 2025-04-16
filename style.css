@@ -11,7 +11,7 @@ body{
 }
 .container
 {
-    width: 30%;
+    min-width: 30%;
     height: 70%;
     margin-top: 25%;
     background-color: black;
@@ -19,4 +19,11 @@ body{
 }
 h1{
     color: black;
+}
+@media(max-width:450px)
+{
+    h1
+    {
+        font-size: smaller;
+    }
 }
