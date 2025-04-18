@@ -5,6 +5,8 @@ function displayTime()
     var min = dateTime.getMinutes();
     var sec = dateTime.getSeconds();
 
+    const names = [" SUN", " MON", " TUE", " WED", " THUR", " FRI", " SAT"];
+
     if (hrs >= 12)
     {
         session.innerHTML = "PM";
@@ -25,5 +27,6 @@ function displayTime()
     document.getElementById("hours").innerHTML = hrs;
     document.getElementById("minutes").innerHTML = min;
     document.getElementById("seconds").innerHTML = sec;
+    days.innerHTML = names[dateTime.getDay()];
 }
 setInterval(displayTime, 1000);
